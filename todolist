@@ -1,6 +1,9 @@
-figure out iframe dynamic sizing thing, why is javascript not working??
+make the flow as a timeline for past projects? how it leads to now?
 
-really, maybe iframe not the way to go, what about using the templating system like flask uses? - not worth it either, that's more useful for dynamic rendering i think... although maybe worth it for DRY principle, so if i make changes later??
+maybe should just have my headshot come out with the menu, to same set width that way?
 
+add a linked grad-school summary page that highlights other efforts from my grad efforts, same with KY postdoc
 
-OK SO now, the templating is working. see the buildpages.py file for commments on what's next
+add a final section highlighting lexington pointing to Mi ambiente work with a link to the official mi ambi site
+
+add a link to Mi ambi logo for the footer

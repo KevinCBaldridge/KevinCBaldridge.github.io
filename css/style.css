@@ -52,6 +52,10 @@
 .footerbar {
     font-family: Dosis-Regular;
     position: relative;
+    padding-top: 10%;
+    bottom:0;
+    left:50%;
+    transform: translate(-50%, -50%);
     height: 10vw;
     text-align: center;
     /* background-image: url(../static/img/KCB-headshotcrop.jpg);
@@ -75,7 +79,7 @@
     overflow-y: auto;
     transition: 0.3s;
     list-style-type: none;
-    font-size: 1.5vw}
+    font-size: 2vw}
 
 .sidenavbar a {
     padding: 0.1vw 0.1vw 0.1vw 0.1vw;
@@ -91,7 +95,8 @@
     position:absolute;
     top: 0;
     right: 1vw;
-    margin-left: 3vw;}
+    margin-left: 3vw;
+    font-size:3vw}
 
 .eachpage {
     width: 85vw;
@@ -109,12 +114,155 @@
 
 
 .body {
-    font-family: Dosis-Regular;}
+    font-family: Dosis-Regular;
+    display:flex;
+    flex: 3;
+    flex-direction: column;
+}
 
 .body h1 {
     font-family: Dosis-Regular;
     text-align: center}
 
+/* .wraps {
+    display:flex;
+} */
+
+.wrapstop {
+    font-family: Dosis-Regular;
+    /* margin-left:15vw; */
+    order:1
+    /* font-size:1.5vw; */
+}
+
+.wrapsmid {
+    font-family: Dosis-Regular;
+    /* margin-left:15vw; */
+    order:2;
+    /* font-size:1.5vw; */
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.wrapsbott {
+    font-family: Dosis-Regular;
+    /* margin-left:15vw; */
+    order:3;
+    /* font-size:1.5vw; */
+    margin-top: 1%;
+    background-image: url("../static/img/KYBG.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+
+.wraps h2 {
+    text-align: left;
+}
+
+.container {
+    display:flex;
+    flex-direction: column;
+}
+
+.subcontainer {
+    display:flex;
+    flex-direction: column;
+    order:1;
+    background-image: url("../static/img/TexasBG.png");
+    background-position: left;
+    background-repeat:no-repeat;
+    background-size:70%;
+}
+
+.lefttriangle {
+    float:left;
+    height: min-content;
+    width: min-content;
+    padding-bottom: 1%;
+    padding-right: 4%;
+    padding-left: 2%;
+    shape-outside: polygon(0% 0%, 40% 0%, 100% 80%, 0% 80%);
+    clip-path: polygon(0% 0%,40% 0%, 100% 80%, 0% 80%);
+    /* background-color: var(--palepink); */
+    font-family: Dosis-Bold;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+    /* font-size:2vw; */
+    text-align:bottom;
+    shape-margin: 5px;
+}
+
+
+
+.righttriangle {
+    float:right;
+    height: min-content;
+    width: auto;
+    padding-bottom: 0%;
+    padding-right: 1%;
+    padding-left: 3%;
+    padding-top: 0%;
+    shape-outside: polygon(100% 0%, 100% 100%, 0% 100%,0% 80%,85% 0%);
+    clip-path: polygon(100% 0%, 100% 100%, 0% 100%,0% 80%, 85% 0%);
+    /* shape-outside: polygon(100% 0%, 100% 100%, 0% 100%,0% 90%, 50% 65%,0% 30%, 40% 0%);
+    clip-path: polygon(100% 0%, 100% 100%, 0% 100%,0% 90%, 50% 65%,0% 30%, 40% 0%); */
+    /* background-color: var(--palepink); */
+    font-family: Dosis-Bold;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+    /* font-size:2vw; */
+    text-align:right;
+    shape-margin: 5px;
+}
+/* .lefttriangle p {
+    float:left;
+    height: 15vw;
+    width: 15vw;
+    shape-outside: polygon(0% 0%, 40% 0%, 100% 80%, 0% 80%);
+    clip-path: polygon(0% 0%,40% 0%, 100% 80%, 0% 80%);
+    overflow-wrap: normal;
+    font-family: Dosis-Bold;
+} */
+
+.imgleft {
+    float: left;
+    /* shape-outside: circle() margin-box; */
+    shape-margin: 10px;
+}
+
+.imgright {
+    float:right;
+    /* shape-outside: circle() margin-box; */
+    shape-margin: 10px;
+}
+
+#IPwrap {
+    shape-outside: polygon(0% 0%, 100% 0%, 100% 100%, 30% 100%, 30% 40%, 0% 40%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 30% 100%, 30% 40%, 0% 40%);
+    /* background-color: #f8a7f4; */
+    shape-margin: 5px;
+}
+
+#abEngr {
+    shape-outside: polygon(0% 30%, 20% 30%,40% 0%,70% 0%, 70% 60%, 100% 60%, 100% 100%,30% 100%, 30% 70%, 0% 70%);
+    clip-path: polygon(0% 30%, 20% 30%,40% 0%,70% 0%, 70% 60%, 100% 60%, 100% 100%,30% 100%, 30% 70%, 0% 70%);
+}
+
+#overviewfig {
+    float:left;
+    width:30vw;
+    shape-outside: circle() margin-box;
+    clip-path: circle() margin-box;
+    shape-margin: 2%;
+
+}
 
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 1vw;}}

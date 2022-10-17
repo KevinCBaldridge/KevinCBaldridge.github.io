@@ -1,10 +1,22 @@
-{% extends 'base.html' %}
-
-{% block header %}
-  {% block title %}Past professional projects{% endblock %}
-{% endblock %}
-
-{% block content %}
+<!doctype html>
+<title>Past professional projects - Kevin C. Baldridge</title>
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/f5abf5d4db.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+<section class="content">
+  <header>
+    <div class="bannerbar">
+    <span style="cursor:pointer;float:left;" onclick="openNav()">&#9776;
+  Past professional projects
+</span>
+    <br><br><img id="headshot" src="../static/img/KCB-headshotcropdownsize.jpg"
+    style="width: 8vw; float:left; margin-top: 0vw;";
+    >
+    </div>
+  </header>
+  <body class="body">
+  
 <div class="container">
   <div class="subcontainer">
 <div class="wrapstop" >
@@ -18,7 +30,7 @@ epitranscriptomics
 
   <p>During my Ph.D. research at Texas, I led an interdisciplinary team at Texas and UNC Chapel Hill in demonstrating for the first time that air pollution-induced RNA oxidation in human lung cell models represents a consistent dose-responsive biomarker of air pollutant exposure (<a href="https://www.tandfonline.com/doi/abs/10.3109/08958378.2014.987361">Baldridge et al 2013</a>). Building on this foundational study, I pioneered a new approach to studying how external environmental factors (like air pollution or ionizing radiation) alter the biochemistry of RNAs to affect cellular function. <img class="imgright" id="IPwrap"
     width="50%"
-    src="{{ imgdirpath }}8OGfigNoTitle.png" 
+    src="../static/img/8OGfigNoTitle.png" 
     alt="8-oxoG-seq overview, see Gonzalez-Rivera et al 2020"> Using antibodies that specifically bind to 8-oxoguanosine combined with next generation RNA sequencing, I developed experimental protocols and wrote the corresponding bioinformatic pipeline to identify specific mRNAs oxidized by external stressors. Together with an outstanding team of scientists in the Contreras and Hildebrandt labs at Texas, we established an in vitro air pollution exposure model with human lungs and demonstrated that complex mixtures of airborne chemicals disrupt cholesterol metabolism and lead to major cellular dysfunction (<a href="https://www.nature.com/articles/s42003-020-01118-6">Gonzalez-Rivera et al 2020</a>).</p>
   </div>
 <div class="wrapsmid">
@@ -28,7 +40,7 @@ epitranscriptomics
     Bioinformatics for
     antibody engineering
   </div>In my first postdoctoral fellowship at Texas, I worked on engineering therapeutic antibodies for binding to mutated cancer targets using yeast display, fluorescence activated cell sorting, and computational tools.<br> <img class="imgleft"
-  src="{{ imgdirpath }}abEngrfignotitle.png"
+  src="../static/img/abEngrfignotitle.png"
   width="40%"
   id="abEngr" >
 
@@ -44,9 +56,45 @@ epitranscriptomics
     public health applications
       </div>  I brought my experience in aerosol science and biochemistry from Texas together with my engineering education to design a testing system for hollow fiber membranes as air filters to remove aerosolized pseudoviruses and nanoparticles mimicking SARS-CoV-2, the virus that causes COVID-19.  Leading a cross-disciplinary team from the College of Medicine and the College of Engineering, <img class="imgleft"
     width="50%"
-    src="{{ imgdirpath }}HFMfigNotitle.png" 
+    src="../static/img/HFMfigNotitle.png" 
     alt="Membrane air filtration overview, see Baldridge et al 2022">I demonstrated that hollow fiber membranes, like the low-cost and easily accessible Lifestraw water filters, can be used to remove airborne microbes like viruses and thereby help reduce transmission during pandemics (<a href="https://pubs.acs.org/doi/full/10.1021/acsestengg.1c00369">Baldridge et al 2022</a>). </p>
   </div>
 
 </div>
-{% endblock %}
+
+  </body>
+
+  <nav>
+    <div id="mysidenavbar" class="sidenavbar">
+      <a href="javascript:void(0)" class="closer" onclick="closeNav()">&times;</a><li>
+      <a href="../index.html">About</a>
+      <a href="../pages/projects.html">Past projects</a>
+      <a href="../pages/hobbies.html">Outside of work</a>
+    </div>
+  </nav>
+  
+    
+<div class="footerbar" style="bottom:1px;">
+  <p style="font-family: Dosis-Light;">Find me on the web</p>
+  <a href="https://instagram.com/kevincbaldridge"><i class="fa-brands fa-instagram"></i></a>
+  <a href="https://scholar.google.com/citations?user=SWifbusAAAAJ&hl=en"><i class="ai ai-google-scholar-square"></i></a>
+  <a href="https://github.com/kevincbaldridge"><i class="fa-brands fa-github"></i></a>
+  <a href="https://linkedin.com/in/kevincbaldridge"><i class="fa-brands fa-linkedin"></i></a>
+  <a href="https://www.youtube.com/channel/UCx6KFPpTW_dmu-Sy6E0sHYQ"><i class="fa-brands fa-youtube"></i></a>
+  <p>Copyright 2022. Kevin C. Baldridge. All rights reserved.</p>
+</div>
+</section>
+<script>
+  function openNav() {
+    document.getElementById("mysidenavbar").style.width = "20vw";
+    targetheight = document.getElementById("mysidenavbar").style.height;
+    document.getElementById("headshot").style.marginTop = "2vw";
+    document.getElementById("headshot").style.width = "18vw";
+  }
+  
+  function closeNav() {
+    document.getElementById("mysidenavbar").style.width = "0";
+    document.getElementById("headshot").style.marginTop = "0vw";
+    document.getElementById("headshot").style.width = "8vw";
+  }
+  </script>

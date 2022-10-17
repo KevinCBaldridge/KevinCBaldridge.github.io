@@ -1,28 +1,42 @@
 <!doctype html>
-<title>{% block title %}{% endblock %} - Kevin C. Baldridge</title>
-<link rel="stylesheet" type="text/css" href="{{ stylepath }}">
+<title>My non-work projects - Kevin C. Baldridge</title>
+<link rel="stylesheet" type="text/css" href="../css/style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://kit.fontawesome.com/f5abf5d4db.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 <section class="content">
   <header>
     <div class="bannerbar">
-    <span style="cursor:pointer;float:left;" onclick="openNav()">&#9776;{% block header %}{% endblock %}</span>
-    <br><br><img id="headshot" src="{{ imgdirpath }}KCB-headshotcropdownsize.jpg"
+    <span style="cursor:pointer;float:left;" onclick="openNav()">&#9776;
+  My non-work projects
+</span>
+    <br><br><img id="headshot" src="../static/img/KCB-headshotcropdownsize.jpg"
     style="width: 8vw; float:left; margin-top: 0vw;";
     >
     </div>
   </header>
   <body class="body">
-  {% block content %}{% endblock %}
+  
+<div class="container">
+  <div class="wrapstop">
+    <p style="margin-left:20vw">For now, check out my grad school band, <a href="https://www.youtube.com/channel/UCx6KFPpTW_dmu-Sy6E0sHYQ" >Maggie's Harem on YouTube</a></p>
+  </div>
+  <div class="wrapsmid">;
+    <img src="../static/img/construction.svg" style="width:20%;position:relative;left:40%;">
+  </div>
+  <div class="wrapsbott" style="background-image:none">
+    <h1>UNDER CONSTRUCTION</h1>
+  </div>  
+</div>
+
   </body>
 
   <nav>
     <div id="mysidenavbar" class="sidenavbar">
       <a href="javascript:void(0)" class="closer" onclick="closeNav()">&times;</a><li>
-      <a href="{{ indexpath }}">About</a>
-      <a href="{{ projectpath }}">Past projects</a>
-      <a href="{{ hobbiespath }}">Outside of work</a>
+      <a href="../index.html">About</a>
+      <a href="../pages/projects.html">Past projects</a>
+      <a href="../pages/hobbies.html">Outside of work</a>
     </div>
   </nav>
   
