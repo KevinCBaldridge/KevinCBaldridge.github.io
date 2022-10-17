@@ -1,0 +1,124 @@
+/* define custom brand fonts */
+@font-face {
+    font-family: "Dosis-Light";
+    src: url(../static/fonts/Dosis-Light.ttf);}
+
+@font-face {
+    font-family: "Dosis-Bold";
+    src: url(../static/fonts/Dosis-Bold.ttf);}
+
+@font-face {
+    font-family: "Dosis-ExtraBold";
+    src: url(../static/fonts/Dosis-ExtraBold.ttf);}
+
+@font-face {
+    font-family: "Dosis-Regular";
+    src: url(../static/fonts/Dosis-Regular.ttf)}
+/* define custom colors */
+:root {
+    --paleyellow: #DBD600;}
+
+:root {
+    --paleblue: #7fb2ec;}
+
+:root {
+    --palepink: #f8a7f4;}
+:root {
+    --palepink50: #f8a7f488;}
+
+.bannerbar {
+    font-family: Dosis-Light;
+    position:relative;
+    background-size: cover;
+    height: 10vw;
+    text-align: center;
+    background-color:white;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-image: linear-gradient(to bottom, var(--palepink),#FFFFFF00);*/
+}
+
+.bannerbar img {
+    transition:0.3s;}
+
+.bannerbar h1 {
+    font-family: Dosis-Regular;
+    position:absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    color:black;}
+
+.footerbar {
+    font-family: Dosis-Regular;
+    position: relative;
+    height: 10vw;
+    text-align: center;
+    /* background-image: url(../static/img/KCB-headshotcrop.jpg);
+    background-position-x: 28%;
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-color: white; */
+}
+
+.sidenavbar {
+    font-family: Dosis-Light;
+    padding-top: 1vw;
+    height: auto;
+    width: 0;
+    z-index: 1;
+    top: 2.5vw;
+    left: 0;
+    overflow-x: hidden;
+    background-image: linear-gradient(to right, var(--paleblue),var(--paleblue),#FFFFFF00);
+    position:absolute;
+    overflow-y: auto;
+    transition: 0.3s;
+    list-style-type: none;
+    font-size: 1.5vw}
+
+.sidenavbar a {
+    padding: 0.1vw 0.1vw 0.1vw 0.1vw;
+    text-decoration: none;
+    color: black;
+    display: block;
+    transition: 0.2s;}
+
+.sidenavbar a:hover {
+    color: white;}
+
+.sidenavbar .closer {
+    position:absolute;
+    top: 0;
+    right: 1vw;
+    margin-left: 3vw;}
+
+.eachpage {
+    width: 85vw;
+    overflow: auto;
+    /*border-style: solid;
+    border-width: 1vw;
+    border-image: linear-gradient( var(--palepink),#FFFFFF00);*/
+}
+
+.featureimage {
+    padding: 0.5vw 0.5vw 0.5vw 0.5vw;
+    height: 50%;
+    width: 50%;
+}
+
+
+.body {
+    font-family: Dosis-Regular;}
+
+.body h1 {
+    font-family: Dosis-Regular;
+    text-align: center}
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 1vw;}}
+
+
+
+

@@ -1,34 +1,28 @@
 <!doctype html>
-<title>About - Kevin C. Baldridge</title>
-<link rel="stylesheet" type="text/css" href="css/style.css">
+<title>{% block title %}{% endblock %} - Kevin C. Baldridge</title>
+<link rel="stylesheet" type="text/css" href="{{ stylepath }}">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://kit.fontawesome.com/f5abf5d4db.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 <section class="content">
   <header>
     <div class="bannerbar">
-    <span style="cursor:pointer;float:left;" onclick="openNav()">&#9776;
-  About
-</span>
-    <br><br><img id="headshot" src="static/img/KCB-headshotcrop.jpg"
+    <span style="cursor:pointer;float:left;" onclick="openNav()">&#9776;{% block header %}{% endblock %}</span>
+    <br><br><img id="headshot" src="{{ imgdirpath }}KCB-headshotcrop.jpg"
     style="width: 13vw; float:left; margin-top: 0vw;";
     >
     </div>
   </header>
   <body class="body">
-  
-<p style="text-align:center">This will be my homepage. I'm working on using jinja2 in python to build my website.</p>
-<h1>Changes coming soon!</h1>
-<br><br>
-
+  {% block content %}{% endblock %}
   </body>
 
   <nav>
     <div id="mysidenavbar" class="sidenavbar">
       <a href="javascript:void(0)" class="closer" onclick="closeNav()">&times;</a><li>
-      <a href="index.html">About</a>
-      <!-- <a href="pages/projects.html">Past projects</a>
-      <a href="pages/hobbies.html">Outside of work</a> -->
+      <a href="{{ indexpath }}">About</a>
+      <!-- <a href="{{ projectpath }}">Past projects</a>
+      <a href="{{ hobbiespath }}">Outside of work</a> -->
     </div>
   </nav>
   
