@@ -179,16 +179,6 @@
     background-size:70%;
 }
 
-.musiccontainer {
-    display:flex;
-    flex-direction: column;
-    order:1;
-    background-image: url("../static/img/musicBG.png");
-    background-position: right;
-    background-repeat:no-repeat;
-    background-size:80%;
-}
-
 .lefttriangle {
     float:left;
     height: min-content;
