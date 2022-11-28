@@ -21,6 +21,7 @@ templatefolder = "templates"
 projectpath = os.path.join(projroot,pagefolder,"projects.html")
 indexoutpath = "./index.html"
 hobbiespath = os.path.join(projroot,pagefolder,"hobbies.html")
+tmppath = os.path.join(projroot,pagefolder,"tmptest.html")
 
 ########################build this approach it is better
 #pagelist=[os.path.join(pagefolder,p) for p in os.listdir(templatefolder)]
@@ -31,9 +32,11 @@ hobbiespath = os.path.join(projroot,pagefolder,"hobbies.html")
 fsloader = jinja2.FileSystemLoader("./templates")
 env1 = jinja2.Environment(loader=fsloader)
 basetempl = env1.get_template("base.html")
+altConttempl = env1.get_template("alternatingContent.html")
 indextempl = env1.get_template("index.html")
 projecttempl = env1.get_template("projects.html")
 hobbiestempl = env1.get_template("hobbies.html")
+tmptempl = env1.get_template("tmptest.html")
 
 #can pass a dict into template rendering
 
@@ -41,6 +44,7 @@ templdict = {}
 templdict['indexpath'] = indextempl
 templdict['projectpath'] = projecttempl
 templdict['hobbiespath'] = hobbiestempl
+templdict['tmptestpath'] = tmptempl
 
 
 #print(vardict)
@@ -50,6 +54,8 @@ templdict['hobbiespath'] = hobbiestempl
 for tk,tv in templdict.items():
     if tv.name=='index.html':
         curpath=os.path.join(projroot,"index.html")
+    elif tv.name=='alternatingContent.html':
+        continue
     else:
         curpath=os.path.join(projroot,pagefolder,tv.name)
     numseps = len(re.findall(os.sep,curpath))

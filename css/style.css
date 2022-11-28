@@ -179,6 +179,15 @@
     background-size:70%;
 }
 
+.bgimgcontainer {
+    display:flex;
+    flex-direction: column;
+    order:1;
+    background-position: right;
+    background-repeat:no-repeat;
+    background-size:80%;
+}
+
 .musiccontainer {
     display:flex;
     flex-direction: column;
@@ -193,12 +202,12 @@
     float:left;
     height: min-content;
     width: min-content;
-    padding-bottom: 1%;
-    padding-right: 4%;
-    padding-left: 2%;
+    padding-bottom: 3%;
+    padding-right: 6%;
+    padding-left: 1%;
     shape-outside: polygon(0% 0%, 40% 0%, 100% 80%, 0% 80%);
     clip-path: polygon(0% 0%,40% 0%, 100% 80%, 0% 80%);
-    /* background-color: var(--palepink); */
+     background-color: var(--palepink); 
     font-family: Dosis-Bold;
     white-space: pre-wrap;
     white-space: -moz-pre-wrap;
@@ -215,16 +224,16 @@
 .righttriangle {
     float:right;
     height: min-content;
-    width: auto;
+    width: min-content;
     padding-bottom: 0%;
     padding-right: 1%;
     padding-left: 3%;
     padding-top: 0%;
-    shape-outside: polygon(100% 0%, 100% 100%, 0% 100%,0% 80%,85% 0%);
-    clip-path: polygon(100% 0%, 100% 100%, 0% 100%,0% 80%, 85% 0%);
+    shape-outside: polygon(100% 0%, 100% 100%, 0% 100%,0% 80%,70% 0%);
+    clip-path: polygon(100% 0%, 100% 100%, 0% 100%,0% 80%, 70% 0%);
     /* shape-outside: polygon(100% 0%, 100% 100%, 0% 100%,0% 90%, 50% 65%,0% 30%, 40% 0%);
     clip-path: polygon(100% 0%, 100% 100%, 0% 100%,0% 90%, 50% 65%,0% 30%, 40% 0%); */
-    /* background-color: var(--palepink); */
+     background-color: var(--palepink); 
     font-family: Dosis-Bold;
     white-space: pre-wrap;
     white-space: -moz-pre-wrap;

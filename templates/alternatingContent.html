@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <div class="wrapstop">
+        <div class="lefttriangle">
+            {% block lefttitle1 %}{% endblock lefttitle1 %}
+        </div>
+        {% block leftcontent1 %} {% endblock leftcontent1 %}
+    </div>
+
+    <div class="wrapsmid">
+        <div class="righttriangle">
+            {% block righttitle1 %}{% endblock righttitle1 %}
+        </div>
+        {% block rightcontent1 %} {% endblock rightcontent1 %}
+    </div>
+
+    <div class="wrapsbott">
+        <div class="lefttriangle">
+            {% block lefttitle2 %}{% endblock lefttitle2 %}
+        </div>
+        {% block leftcontent2 %} {% endblock leftcontent2 %}
+    </div>
+
+</div>
+{% endblock content %}
+
